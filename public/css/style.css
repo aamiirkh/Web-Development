@@ -1,0 +1,104 @@
+body {
+  background: #607D8B;
+  font-family: arial;
+  padding: 200px 60px 0px;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #45aba6;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.login-form .social-icon {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+.login-form {
+    background: #fff;
+    width: 450px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: table;
+    padding: 80px 60px 100px;
+    box-sizing: border-box;
+}
+.form-group {
+  float: left;
+  width: 100%;
+  margin: 0 0 15px;
+  position: relative;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    height: 56px;
+    border-radius: 74px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 75px;
+}
+.login-form .form-group .input-icon {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    height: 100%;
+    padding-left: 35px;
+    color: #666;
+}
+.login-form .login-btn {
+  background: #45aba6;
+  padding: 11px 50px;
+  border-color: #45aba6;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #45aba6;
+  border-radius: 44px;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+}
+.login-form .reset-psw {
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  color: #45aba6;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 11px;
+}
+.login-btn {
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: #45aba6;
+    border-radius: 60%;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+.login-btn:hover{
+  opacity: 0.9;
+}
+.login-form .seperator {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin: 50px 0 0;
+}
