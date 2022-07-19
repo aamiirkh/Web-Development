@@ -41,24 +41,20 @@ app.post("/register", function(req, res) {
       username: req.body.user,
       password: req.body.pass
     };
-    if (!req.body.first || !req.body.last || !req.body.user || !req.body.pass) {
-      res.sendFile(__dirname + "/public/response/reg-failure.html");
-    } else {
-      dbo.collection("testDB").find({
-        username: req.body.user
-      }).toArray(function(err, result) {
-        if (err) throw err;
-      if(Object.keys(result).length !== 0)
+    dbo.collection("testDB").find({
+      username: req.body.user
+    }).toArray(function(err, result) {
+      if (err) throw err;
+      if (Object.keys(result).length !== 0)
         res.sendFile(__dirname + "/public/response/reg-failure.html");
-      else{
-      dbo.collection("testDB").insertOne(myobj, function(err, result) {
-        if (err) throw err;
-        res.sendFile(__dirname + "/public/response/reg-success.html");
-        db.close();
+      else {
+        dbo.collection("testDB").insertOne(myobj, function(err, result) {
+          if (err) throw err;
+          res.sendFile(__dirname + "/public/response/reg-success.html");
+          db.close();
         });
       }
     });
-    }
   });
 });
 
